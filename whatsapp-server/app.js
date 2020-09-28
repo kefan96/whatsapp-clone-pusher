@@ -8,7 +8,7 @@ const {
 const Pusher = require('pusher');
 const cors = require('cors');
 
-const connection_url = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0.mhbxn.mongodb.net/whatsapp?retryWrites=true&w=majority`;
+const connection_url = process.env.MONGO_URL;
 const PORT = process.env.PORT || 9000;
 
 app.use(express.json());
